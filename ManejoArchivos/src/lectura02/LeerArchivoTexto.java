@@ -22,7 +22,8 @@ public class LeerArchivoTexto {
             while (entrada.hasNext()) {
                 String linea = entrada.nextLine();
                 List<String> lista = Arrays.asList(linea.split("\\|"));
-                ArrayList<String> linea_partes = new ArrayList<>(lista);
+                // va dos "\\" antes de el pipe para que java lea que es un caracter puro 
+               ArrayList<String> linea_partes = new ArrayList<>(lista);
                 
                 
                 System.out.printf("%s\n", linea_partes.get(0));
