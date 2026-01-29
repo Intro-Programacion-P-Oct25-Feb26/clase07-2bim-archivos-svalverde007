@@ -36,8 +36,8 @@ public class Datos {
                 contador = contador + 1;
 
             }
-            prom = suma / 2;
-
+            prom = suma / contador;
+            
             entrada.close();
         } catch (Exception e) {
             System.err.println("Error al leer el archivo");
